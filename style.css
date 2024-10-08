@@ -1,0 +1,125 @@
+/* h1 styling */
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    color: #ff6f61;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+h1:hover {
+    color: #ff9671;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* page centering */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* input styling */
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.input-field {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: #5bc0de;
+}
+
+/* button styling */
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.addBtn, .editBtn, .deleteBtn {
+    margin-left: 10px;
+}
+
+.addBtn {
+    background-color: #007bff;
+}
+
+.addBtn:hover {
+    background-color: #0056b3;
+}
+
+.editBtn {
+    background-color: #28a745;
+}
+
+.editBtn:hover {
+    background-color: #218838;
+}
+
+.deleteBtn {
+    background-color: #dc3545;
+}
+
+.deleteBtn:hover {
+    background-color: #c82333;
+}
+
+/* No items message */
+.no-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: #6c757d;
+}
+
+/* Todo list styling */
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+    width: 80%;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.todo-list li:hover {
+    transform: scale(1.02);
+}
